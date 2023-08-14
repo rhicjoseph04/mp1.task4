@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <link rel="shortcut icon" href="">
+    <link rel="icon" type="image" href="50k ff.jpg"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+    <style>
+        html {
+            height: 100%;
+            box-sizing: border-box;
+
+        }
+
+
+        .navbar-brand img {
+            margin-right: 0px;
+            width: 100px;
+            height: 100px;
+            padding-left: 0px;
+            margin-left: 0px;
+            justify-content: center;
+
+
+        }
+
+        .navbar-brand h1 {
+
+            font-style: oblique;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: relative;
+            padding-top: 8px;
+            padding-bottom: 0px;
+        }
+
+        .navbar-brand h1 span {
+            color: blue;
+            text-decoration: none;
+
+        }
+
+        nav .icons i:hover {
+            color: #c72092;
+
+
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        nav .logo {
+            font-size: 50px;
+            color: blueviolet;
+            margin: 5px 0;
+            cursor: pointer;
+            position: relative;
+            padding: 10px;
+            padding-top: 5px;
+            position: flex;
+
+        }
+
+
+
+        .nav-txt ul {
+            list-style: none;
+        }
+
+        .nav-txt nav ul li {
+            display: inline-block;
+            margin: 5px 20px;
+            padding-bottom: 10px;
+
+        }
+
+        .nav-txt ul li a {
+            text-decoration: none;
+            color: black;
+            transition: 0.2s;
+            display: inline;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-top: 20px;
+            font-weight: 100;
+
+        }
+
+        .nav-txt ul li a:hover {
+            color: red;
+        }
+
+        /* carousel */
+
+
+        .carousel-inner {
+            padding-top: 10px;
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+
+
+
+        .carousel-image {
+            object-fit: contain;
+            height: 600px;
+        }
+
+        .carousel-item {
+            position: relative;
+        }
+
+        audio {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+
+
+
+        body {
+
+            margin: 0;
+            padding: 0;
+            justify-content: space-around;
+            position: relative;
+            margin: 0;
+            min-height: 100%;
+            padding-bottom: 6.74 rem;
+            box-sizing: inherit;
+            background-size: cover;
+            background-color: black;
+
+
+
+
+        }
+
+        .accordion-header {
+            font-size: large;
+            font-weight: 80;
+            font-style: italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: black;
+            text-align: center;
+            font-size: 100px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            margin: 0;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .accordion-body {
+
+            background-color: goldenrod;
+            background-size: contain;
+            width: 100%;
+            height: 30vh;
+            background-position: center;
+            font-variant: normal;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.2rem;
+
+        }
+
+        .accordion-item {
+
+            font-style: oblique;
+            color: black;
+            padding: 0px;
+            margin: 0;
+            font-display: center;
+            position: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+
+        }
+
+        /*Testimonials*/
+
+        .testimonials {
+            width: 100%;
+            height: 140vh;
+            padding: 25px 0;
+        }
+
+        .testimonials h1 {
+            margin: 35px 0;
+            font-size: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            color: gold;
+        }
+
+        .testimonials .box {
+            width: 90%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 25px 0;
+            background-color: black;
+        }
+
+        .testimonials .box .card {
+            width: 290px;
+            height: 440px;
+            box-shadow: 0 0 8px #6c14d0;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px 20px;
+            background: goldenrod;
+            width: 300px;
+            height: 300px;
+
+
+        }
+
+
+
+
+
+        .testimonials .box .card .video {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 100;
+            padding-bottom: 56.25%;
+            overflow: hidden;
+            padding-right: 15px;
+
+        }
+
+        .testimonials .box .card .testimonials_text .btn {
+            text-decoration: none;
+            padding: 10px 20px;
+            background: linear-gradient(to right, red, #6c14d0);
+            color: blue;
+        }
+
+        /* Review */
+
+
+
+
+        .Card h1 {
+            font-size: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            color: gold;
+        }
+
+
+
+        .review .review_box {
+            width: 95%;
+            position: relative;
+            top: 7%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .review .profile .profile_image {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 5px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .review .profile .profile_image:hover {
+            transform: scale(1.2);
+        }
+
+        .review .profile_image img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+    
+        .review .card {
+            display: flex;
+            align-items:flex-start;
+        }
+
+
+        .login_form{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(boos\ gold\ boss\ toyo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.login_form .left img{
+    width: 400px;
+}
+
+.login_form .right{
+    position: relative;
+    top: -50px;
+    left: -60px;
+    padding: 50px 80px;
+}
+
+.login_form .right h1{
+    font-family: prevattscriptssk;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.login_form .right p{
+    margin-bottom: 5px;
+}
+
+.login_form .right .user{
+    border: 2px solid gold;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+}
+
+.login_form .right .user i{
+    position: relative;
+    top: 9px;
+    left: 15px;
+    color: blue;
+}
+
+.login_form .right .user .username{
+    position: relative;
+    left: 9%;
+    width: 295px;
+    background: none;
+    outline: none;
+    border: none;
+    display: flex;
+    font-size: 15px;
+}
+
+.login_form .right .passworg_tag{
+    margin: 15px 0 5px 0;
+}
+
+.login_form .right .password{
+    border: 2px solid gold;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+}
+
+.login_form .right .password i{
+    position: relative;
+    top: 9px;
+    left: 15px;
+    color: #c72092;
+}
+
+.login_form .right .password input{
+    position: relative;
+    left: 9%;
+    width: 295px;
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    font-size: 15px;
+}
+
+::-webkit-input-placeholder{
+    color: red;
+    opacity: 0.7;
+}
+
+.login_form .right .forget{
+    position: relative;
+    left: 60%;
+    margin: 6px 0 10px 0;
+    cursor: pointer;
+}
+
+.login_form .right button{
+    width: 350px;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(to right,gold , goldenrod);
+}
+
+.login_form .right .loging_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.login_form .right .loging_icon a{
+    width: 30px;
+    height: 30px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background: #f3f3f3;
+    box-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+
+.login_form .right .loging_icon img{
+    width: 20px;
+    margin: 5px 5px;
+}
+
+
+        /*Footer*/
+
+        footer {
+
+
+            background-color: goldenrod;
+           border: 0px;
+            margin: 0px;
+            padding-bottom:  0px;
+            padding-top: 20px;
+            font-size: 16pt;
+            width: 100%;
+            position: bottom;
+            display: flex;
+            justify-content: space-between;
+            height: 80px;
+            margin-bottom: 0;
+            margin-top: 0;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+            
+
+
+        }
+
+/* Default styles for larger screens */
+.container {
+  margin: 20px;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 10px;
+  }
+}
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="bosstoyodp.jpg" width="30" height="30" alt="Logo">
+                    <br>
+
+                    <h1>PINOY PAWNSTAR by<span>
+                            Boss Toyo</span></h1>
+
+                </a>
+            </div>
+
+            <div class="nav-txt">
+                <ul>
+                    <li><a href="#Home"> <i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="#Testimonials"><i class="fa-brands fa-youtube"></i>Testimonials</a></li>
+                    <li><a href="#About"><i class="fa-solid fa-person"></i>About</a></li>
+                    <li><a href="#Review"><i class="fa-solid fa-comment"></i>Review</a></li>
+                    <li><a href="#Contact Us"><i class="fa-regular fa-address-book"></i>Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section>
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <audio controls>
+                        <source src="Book The Rental Wit It - RAGE.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const carouselItems = document.querySelectorAll('.carousel-item');
+                            carouselItems.forEach(item => {
+                                item.addEventListener('slid.bs.carousel', () => {
+                                    const audioElements = document.querySelectorAll(
+                                        'audio');
+                                    audioElements.forEach(audio => {
+                                        audio.pause();
+                                    });
+                                });
+                            });
+                        });
+                    </script>
+
+                    <!-- Carousel -->
+
+                    <div id="carouselExamplesSlidesonly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <img src="boos gold boss toyo.jpg" class="d-block w-100" style="object-fit: cover;" alt="..." style="height:500px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="50k followers.jpg" class="d-block w-100" style="object-fit: cover;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="50k ff.jpg" class="d-block w-100" style="object-fit: cover;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="slidebosstoyo.jpg" class="d-block w-100" style="object-fit: cover;" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+
+            </button>
+        </div>
+
+    </section>
+    <br>
+    <br>
+    <section>
+        <center>
+            <div class="about" id="About"></div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Featuring
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                            <strong>MANILA, Philippines — Rapper Jayson Luzadas, popularly known as Boss Toyo,
+                                explained
+                                why
+                                he made “Pinoy Pawnstars” on YouTube, a Filipino version of History Channel’s “Pawn
+                                Stars.”</strong></div>
+                    </div>
+                </div>
+                <div class="accordion item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Jason Luzada
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong> In an exclusive interview with Philstar.com during the launch of Shanti Dope and
+                                G’s
+                                new song “Kamusta,” the rap artist and entrepreneur said he made the Filipino
+                                adaptation
+                                of
+                                the popular reality show to honor Filipino artists.
+
+                                “Actually fan ako ng 'Pawnstar' sa History Channel sa US. Actually 2020 ko pa siya
+                                balak
+                                gawin kaso short of funds pero ngayong 2022 nagawa ko na siya,” Jayson said.
+
+                                “Ginawa ko yon para bigyan ng halaga ‘yong mga gamit ng mga local artists natin.
+                                Kahit
+                                sapatos lang nila yan o ano, may value yan kasi pinaghirapan naman nila yung
+                                celebrity
+                                status nila dito sa Pilipinas,” he added.
+                                He said that he already bought things from artists and celebrities, such as a jacket
+                                which
+                                belonged to Gloc-9, some Beatles collections, Japanese masks and samurai, as well as
+                                Francis
+                                M collectibles and coins.</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            The One and Only Boss Pinpy Pawnstar
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong></strong>
+                            “It’s open for everyone but for scheduling for safety purposes. This July, ma-out na
+                            namin
+                            sa bigger shop in Quezon City,” he said.
+
+                            “Ginawa ko talaga si Pinoy Pawnstar para sa mga local artists natin. Kasi they
+                            worked
+                            hard
+                            kung ano man sila so kailangang bigyan natin ng halaga yung mga gamit nila. Kumbaga
+                            hindi
+                            lang ibang bansa yung pinapahalagahan katulad ng gamit ni Michael Jordan,” he added.
+
+
+                            Si Jayson Luzadas na kilala sa kanyang pangalan na Boss Toyo sa social media ay
+                            isang rapper
+                            at
+                            negosyante na tubong Cavite City.
+
+                            Si Jayson din ang nasalikod ng mga content na madalas magtrending sa social media na
+                            “How To
+                            Be
+                            You Po”, “Kwentong Bahay” at “Pinoy Pawnstars” na tampok ang mga sikat na
+                            personalidad sa
+                            social
+                            media lalo na sa Hip-hop scene.
+
+                            Ilang ulit narin na-feature si Jayson sa telebisyon tulad ng GMA Network at mga
+                            mainstream
+                            na
+                            pahayagan tulan ng Inquirer at iba pa dahil sa mga viral content nito sa social
+                            media. At
+                            dahil
+                            dito ay mas lalo syang nakilala at mas dumami rin ang mga tumatangkilik sa kanya.
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--Testimonials -->
+    <section>
+
+        <div class="testimonials" id="Testimonials">
+
+            <h1>Testimonials</h1>
+
+            <div class="box">
+
+                <div class="card">
+
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+
+                    <div class="video">
+                        <div class="card d-inline-block" style="width: 18rem;">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" width="100%" height="200vh"
+                                    src="https://www.youtube.com/embed/uFwWC4D7VPU" style="object-fit:cover;"
+                                    title="Pinoy Pawnstars Ep.230 - 250k Vintage Cap ng King of Comedy!? 😱"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                <a href="#" class="btn btn-primary">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+
+                    <div class="video">
+                        <div class="card d-inline-block" style="width: 18rem;">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="100%" height="200vh" src="https://www.youtube.com/embed/KR4NZiFc1EU" style="object-fit:cover;"
+                                    title="Pinoy Pawnstars Ep.210 - Hashtag Member nagbenta ng worth 500k"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                <a href="#" class="btn btn-primary">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+
+                    <div class="video">
+                        <div class="card d-inline-block" style="width: 18rem;">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="100%" height="200vh" src="https://www.youtube.com/embed/cU5a2FgsN4w" style="object-fit:cover;"
+                                    title="Pinoy Pawnstars Ep.211 - Girl Tapang nagalit !!" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                <a href="#" class="btn btn-primary">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+
+                    <div class="video">
+                        <div class="card d-inline-block" style="width: 18rem;">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="100%" height="200vh" src="https://www.youtube.com/embed/V88s4zD_s9I" style="object-fit:cover;"
+                                    title="Pinoy Pawnstars Ep.173 - Pag bisita ng isang Ex PBB Housemate, Loves Jhoy nagalit kay Boss Toyo !?"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                <a href="#" class="btn btn-primary">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+
+                    <div class="video">
+                        <div class="card d-inline-block" style="width: 18rem;">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="100%" height="200vh%" src="https://www.youtube.com/embed/W3rFXE2oBL0" style="object-fit:cover;"
+                                    title="Pinoy Pawnstars Ep.175 - Masayang kwentuhan na nauwi sa pagwawala ni KIKO MATOS 🙈"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                <a href="#" class="btn btn-primary">See more</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+
+                    <div class="video">
+                        <div class="card d-inline-block" style="width: 18rem;">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="100%" height="200vh" src="https://www.youtube.com/embed/1NdVH4Bn_8M" style="object-fit:cover;"
+                                    title="Pinoy Pawnstars Ep.131 - WHAMOS Gold Diamond Glasses 250k??? 🙀🙀🙀"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                <a href="#" class="btn btn-primary">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+
+                    <div class="video">
+                        <div class="card d-inline-block" style="width: 18rem;">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="100%" height="200vh" src="https://www.youtube.com/embed/7VD2peJMC5M" style="object-fit:cover;"
+                                    title="Pinoy Pawnstars Ep.153 - Ano ang sadya at dahilan ng pagpunta ng nag-iisang Gloc-9?"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                <a href="#" class="btn btn-primary">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+
+                    <div class="video">
+                        <div class="card d-inline-block" style="width: 18rem;">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="100%" height="200vh" src="https://www.youtube.com/embed/IYDHuYqWlfU" style="object-fit:cover;"
+                                    title="BOSS TOYO SUMAGOT NA SA BANAT NI JONAH NA HIRAM LANG ANG MGA GINTO NI PRICETAGG"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                <a href="#" class="btn btn-primary">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+
+                    <div class="video">
+                        <div class="card d-inline-block" style="width: 18rem;">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="100%" height="200vh" src="https://www.youtube.com/embed/zzy4CrHQovw" style="object-fit:cover;"
+                                    title="Pinoy Pawnstars Ep.179 - 1.2M WBO Belt" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe> <a href="#" class="btn btn-primary">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+
+                    <div class="video">
+                        <div class="card d-inline-block" style="width: 18rem;">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="100%" height="200vh" src="https://www.youtube.com/embed/KgdT0-dQB5M" style="object-fit:cover;"
+                                    title="Pinoy Pawnstars Ep.212 - Pag tanaw ng utang na loob" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>><a href="#" class="btn btn-primary">See more</a>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+
+                    <div class="video">
+                        <div class="card d-inline-block" style="width: 18rem;">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="100%" height="200vh" src="https://www.youtube.com/embed/EI_fUVcZTnE" style="object-fit:cover;"
+                                    title="Casimero Sinugod si Boss Toyo sa PinoyPawnStar Ging-ging #QuadroAlasLangMalakas"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe> <a href="#" class="btn btn-primary">See more</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+
+                    <div class="video">
+                        <div class="card d-inline-block" style="width: 18rem;">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="100%" height="200vh" src="https://www.youtube.com/embed/HTN_vdcTlxQ" style="object-fit:cover;"
+                                    title="Pinoy Pawnstars Ep.185 - 1.3 Million Electric Guitar?!" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe> <a href="#" class="btn btn-primary">See more</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <table>
+            <div class="review" id="Review">
+            <div class="review">
+            <div class="card">
+                <div class="card-header">
+                    <h1>@Fitnest First</h1>
+                </div>
+                <div class="profile_image">
+                    <img src="fitness-first-2014-304 (1).jpg" style="object-fit:cover;"> 
+                </div>
+                <p class="card-text"> Isa kang Alamat boss toyo Sana marami kapang MA tulungan sa munti mung programa
+                    maraming
+                    salamat
+                    boss toyo at sa mga sponsor MO super SM. Ikw ang tunay na bayani kase tumutulong ka NG wala
+                    kapalit walang exposure Para MA kilala at sumikat ka isa ka talagang ka geng geng😍😍😍God
+                    bless
+                    po sa inyo more power po❤️❤️❤️🙏🙏🙏</p>
+                <div class="like">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header">
+                    <h1>Andrew Bonza</h1>
+                </div>
+                <div class="profile_image">
+                    <img src="andrew bonza.jpg" style="object-fit:cover;">
+                </div>
+                <p class="card-text">boss toyo ay isang legendary dito s pinas lht ng artist, rapper,, celebrities at
+                    iba pa ay
+                    sya
+                    ang kauna unahan n magkkaroon ng value ang mga gamit ng mga sikat.. kung ang apraisal s
+                    iyong
+                    short ay mababa yan ay depende s future buyer kung meron. wlang significant or value ksi di
+                    nmn
+                    title fights yun n meron belts or trophy. at pinoy pawnstar is a newly copied on american tv
+                    series running a more than a decade ago. kya expect hindi p sya ganun k galing at kung dti
+                    nkakabili sya ng mahal n item bka he learn for his mistake kya di nmn lagi n pwedeng masunod
+                    ang
+                    seller... pinakita lng dito n hindi scripted ang show ni boss toyo kaya sorry s mag babash
+                    ky
+                    "Toyo" dahil apektado kyo lht dhil balang araw respected n sya ng lht ng artist pti n ng mga
+                    politiko dhil s kanya lht pupunta ang mga fans pra bumili at magbenta ng mga gamit...</p>
+                <div class="like">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card">
+                <div class="card-header">
+                    <h1>Kuya Dan Tv</h1>
+                </div>
+                <div class="profile_image">
+                    <img src="kuya dan tv.jpg" style="object-fit:cover;">
+                </div>
+                <p class="card-text">Salute sayo Boss Toyo at kay Ms. Joy. Mas pinagpapala talaga ang mga taong gaya nyo
+                    na bukal
+                    sa
+                    loob ang pagtulong sa kapwa. More power sayo idol</p>
+                <div class="like">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="card-header">
+                    <h1>Richard Sanches</h1>
+                </div>
+                <div class="profile_image">
+                    <img src="richardsanchez78.jpg"style="object-fit:cover;">
+                </div>
+                <p class="card-text">Pagpalain kapa ng panginoon sa mga gianagawa mo mahabang buhay para sayo boss oyot
+                    sanay
+                    madami
+                    kapag kapos palad na matulungan..</p>
+                <div class="like">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h1>Santi G.Vlogs</h1>
+                </div>
+                <div class="profile_image">
+                    <img src="santi g vlogs.jpg"style="object-fit:cover;">
+                </div>
+                <p class="card-text">more power boss toyo, palagi akong nanonood sa mga content mo, more blessings to
+                    come, may
+                    puso
+                    compara sa pawnstars ng USA,</p>
+                <div class="like">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+
+  
+
+
+        </div>
+        </table>
+
+    </section>
+
+    
+    <!--Login Form-->
+
+    <div class="login_form">
+        <div class="left">
+            <img src="boss-toyo_2022-05-27_17-20-55 (1).jpg"style="object-fit:cover;">
+        </div>
+
+        <div class="right">
+            <h1>Welcome  Back</h1>
+
+            <form action="#" method="post">
+                <p>User Name</p>
+                <div class="user">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="user" placeholder="User Name" class="username">
+                </div>
+
+                <p class="passworg_tag">Password</p>
+                <div class="password">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="text" name="password" placeholder="Password">
+                </div>
+
+                <p class="forget">Forget Password ?</p>
+
+                <button type="submit">Login</button>
+                <div class="loging_icon">
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!--footer-->
+
+
+    <footer>
+        <div>
+            <a href="#"><i class="fa-solid fa-house"></i>Pinoy Pawnstar House</a>
+            <a href="#"><i class="fa-solid fa-phone"></i>092771706035</a>
+            <a href="#"><i class="fa-solid fa-envelope"></i>tsitsakbraulio@gmail.com</a></div>
+
+
+            <div>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        
+
+
+
+    </footer>
+
+</body>
+
+</html>
